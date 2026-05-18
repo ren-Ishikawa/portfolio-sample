@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>My Portfolio</title>
+        <meta
+            name="description"
+            content="Webエンジニアのポートフォリオサイトです。スキルや制作実績を掲載しています。"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/ress/dist/ress.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <div class="cover cover-home">
+            <header class="page-header wrapper">
+                <h1 class="align-center">
+                    <a href="index.html" class="logo-text font-english"
+                        >My Portfolio</a
+                    >
+                </h1>
+                <nav>
+                    <ul class="main-nav font-english">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="works.html">Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h2 class="page-title font-english fade-in">Hello, World.</h2>
+        </div>
+
+        <section class="about">
+            <h3 class="heading-large font-english fade-in">About Me</h3>
+      <table class="profile-table fade-in">
+        <tr>
+            <th>名前</th>
+            <th>趣味</th>
+            <th>言語</th>
+        </tr>
+        <tr>
+            <td>石川蓮</td>
+            <td>バスケ、ゴルフ、サウナ</td>
+            <td>Java, SQL, HTML/CSS</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                何とか頑張ってます。</br>
+                来月のチーム演習が恐怖です。
+            </td>
+        </tr>
+    </table>
+    <div class="infinite-slider fade-in">
+                <div class="slider-track">
+                    <img src="images/Java.png" alt="Java" />
+                    <img src="images/cac.png" alt="CAC" />
+                    
+                    <img src="images/Java.png" alt="Java" />
+                    <img src="images/cac.png" alt="CAC" />
+                </div>
+            </div>
+            <div class="align-center">
+                <a class="btn fade-in" href="works.html">制作実績を見る</a>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <h3 class="heading-large font-english fade-in">Contact & Info</h3>
+            <table class="info fade-in">
+                <tr>
+                    <th>Email</th>
+                    <td>rishika@cac.co.jp</td>
+                </tr>
+                <tr>
+                    <th>GitHub</th>
+                    <td><a href="https://github.com/ren-Ishikawa">@your_github</a></td>
+                </tr>
+            </table>
+            <div class="copyright">
+                <small>&copy; 2026 My Portfolio</small>
+            </div>
+        </footer>
+        <script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            // 画面内に入ったらクラスを追加
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, { threshold: 0.1 }); // 10%見えたら実行
+
+    // fade-inクラスがついた要素をすべて観察する
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+    </body>
+</html>
