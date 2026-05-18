@@ -123,7 +123,7 @@ img {
 /* Homeページ (index.html) */
 .cover-home {
     background-image: linear-gradient(rgb(0, 0, 255), rgba(0, 0, 0, 0.5)), 
-                      url("../images/cac.png"); /* ホーム用の画像名に書き換えてください */
+                      url("../images/1.jpg"); /* ホーム用の画像名に書き換えてください */
     background-size: cover;
     background-position: center;
 }
@@ -131,7 +131,7 @@ img {
 /* Worksページ (works.html) */
 .cover-works {
     background-image: linear-gradient(rgb(0, 0, 255), rgba(0, 0, 0, 0.5)), 
-                      url("../images/cac.png"); /* Works用の画像名に書き換えてください */
+                      url("../images/2.jpg"); /* Works用の画像名に書き換えてください */
     background-size: cover;
     background-position: center;
 }
@@ -139,7 +139,7 @@ img {
 /* Blogページ (blog.html) */
 .cover-blog {
     background-image: linear-gradient(rgb(0, 0, 255), rgba(0, 0, 0, 0.5)), 
-                      url("../images/cac.png"); 
+                      url("../images/3.JPG"); 
     background-size: cover;
     background-position: center;
 }
